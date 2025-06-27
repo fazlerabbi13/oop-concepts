@@ -17,14 +17,16 @@ class Student{
         System.out.println(this.age);
     }
 
-    Student(){
-        System.out.println("constructor");
-    }
+    //non parameterize constructor
 
-    // public Student(String name, int age) {
-    //     this.name = name;
-    //     this.age = age;
+    // Student(){
+    //     System.out.println("constructor");
     // }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     
 }
@@ -35,9 +37,9 @@ public class OOPS {
         // pen.color="red";
         // pen.type="gel";
         // pen.write();
-        Student s1 = new Student();
-        s1.name="rabbi";
-        s1.age=23;
+        Student s1 = new Student("rabbi",23);
+        // s1.name="rabbi";
+        // s1.age=23;
         s1.info();
    }
 }
